@@ -8,11 +8,20 @@ function login() {
   		if (error) {
     		console.log("Login Failed!", error);
   		} else {
-    		console.log("Authenticated successfully as " + google.displayName "  with payload:", authData);
+    		console.log("Authenticated successfully with payload:", authData);
+    		alert("IT WORKS! Logged in as " + authData.google.displayName);
+    		openWin();
     		
   		}
 	})
 	
 };
 
+function openWin(){
+	window.open("dashboard.html", "_parent");
+}
+
+function nameUpdate() {
+	console.log(authData);
+}
 	
