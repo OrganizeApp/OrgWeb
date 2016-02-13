@@ -8,8 +8,8 @@ function login() {
   		if (error) {
     		console.log("Login Failed!", error);
   		} else {
-    		console.log("Authenticated successfully with payload:", authData);
-    		alert("logger in as " + google.displayName);
+    		console.log("Authenticated successfully as " + google.displayName "  with payload:", authData);
+    		
   		}
 	})
 	
