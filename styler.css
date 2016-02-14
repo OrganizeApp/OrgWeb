@@ -16,3 +16,7 @@ h1 {
 	color: #18A949;
 	font-family: 'Oswald', sans-serif; 
 }
+
+#header{
+	-webkit-filter: greyscale(1);
+}
