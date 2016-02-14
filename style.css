@@ -1,0 +1,17 @@
+.sideProfile{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.col-md-3{
+	background: red;
+	top: 0; 
+	bottom: 0; 
+	left: 0;
+	display: block;
+	position: fixed;
+}
+
+.container{
+
+}
