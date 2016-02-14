@@ -1,17 +1,76 @@
+h1, h2, h3, h4, h5, h6, a {
+	color: #18A949;
+	font-family: 'Oswald', sans-serif; 
+}
+
+.content h2, h3, h4, h5, h6, a {
+	color: #333333;
+	font-family: 'Oswald', sans-serif; 
+}
+
+.menu h3 {
+	color: #18A949;
+}
+
 .sideProfile{
 	text-align: center;
 	padding-top: 20px;
 }
 
-.col-md-3{
-	background: red;
+.menu{
+	background: #444444;
 	top: 0; 
 	bottom: 0; 
 	left: 0;
 	display: block;
 	position: fixed;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.container{
+#profilePic {
+	border-radius: 50%;
+	-webkit-filter: grayscale(1);
 
+}
+.sideMenu {
+	padding-top: 20px;
+}
+
+.sideMenu a{
+	color: black;
+	padding:20px;
+	display: block;
+	font-size: 20px;
+
+}
+
+.sideMenu a:hover{
+	color: #18A949;
+	background-color: #333333;
+	text-decoration: none;
+}
+
+.sideMenu a:focus{
+	color: #18A949;
+	background-color: #333333;
+	text-decoration: none;
+}
+
+.content {
+	display: block;
+	position: absolute;
+	right: 0;
+	padding-left: 0;
+}
+
+.dashContent {
+	margin-right: 100px;
+	margin: 20px;
+
+}
+
+.game {
+	margin: 10px;
+	
 }

@@ -8,22 +8,80 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="navigation.js"></script>
 		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body onload="loadFacebookAuthData()">
 	<div class='container'>
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 menu">
 				<div class="sideProfile">
 					<img src="" id="profilePic">
-					<h3 id="welcome">Welcome!</h3>	
+					<h3 id="welcome"></h3>	
 				</div>
+
+				
+				<div class="sideMenu">
+					<a href="#" class="games">Games</a>
+					<a href="#" class="createGame">Create Game</a>
+					<a href="#" class="squads">Squads</a>
+					<a href="#" class="profile">Profile</a>
+				</div>
+				
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 content">
+				<div id="games">
+					<div class="dashContent">
+						<h1>My Games</h1>
+						<div class="game">
+							<h2>Title</h2>
+							<h3>Date/time</h3>
+							<h3>Location</h3>	
+						</div>
+						<h1>Game Invites</h1>
+						<div class="game">
+							<h2>Title</h2>
+							<div class="acceptCheckbox pull-right">
+								<h4>Going?</h4>
+								<input type="checkbox"></input>
+							</div>
+							<h3>Date/time</h3>
+							<h3>Location</h3>	
+						</div>
+						<div class="game">
+							<h2>Title</h2>
+							<div class="acceptCheckbox pull-right">
+								<h4>Going?</h4>
+								<input type="checkbox"></input>
+							</div>
+							<h3>Date/time</h3>
+							<h3>Location</h3>	
+						</div>
+						<div class="game">
+							<h2>Title</h2>
+							<div class="acceptCheckbox pull-right">
+								<h4>Going?</h4>
+								<input type="checkbox"></input>
+							</div>
+							<h3>Date/time</h3>
+							<h3>Location</h3>	
+						</div>
+					</div>
+				</div>
+				<div id="createGame">
+					<div class="dashContent"></div>
+				</div>
+				<div id="squads">
+					<div class="dashContent"></div>
+				</div>
+				<div id="profile">
+					<div class="dashContent"></div>
+				</div>
 			</div>
 		</div>
 	</div>

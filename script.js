@@ -1,4 +1,6 @@
 var ultData = new Firebase("https://cheultimate.firebaseio.com/");
+var ultUserData = new Firebase("https://cheultimate.firebaseio.com/users/");
+
 
 //AUTH STUFF
 
@@ -37,8 +39,16 @@ function loadFacebookAuthData() {
 
 			greeting.innerHTML = authData.facebook.displayName;
 			profilePic.src = authData.facebook.profileImageURL;
-  		}
-	});
+
+			var userData = {
+				"uid": authData.uid,
+				"name": authData.facebook.displayName
+			}
+
+			ultUserData.push(userData);
+
+		}
+  	});
 
 
 }
